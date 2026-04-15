@@ -187,7 +187,7 @@ class NovaDependencyContainer extends Field
         }
     }
 
-    public function resolve($resource, ?string $attribute = null)
+    public function resolve($resource, ?string $attribute = null) : void
     {
         foreach ($this->fields as $field) {
             if ($field instanceof Field) {
@@ -196,7 +196,7 @@ class NovaDependencyContainer extends Field
         }
     }
 
-    public function resolveForDisplay($resource, ?string $attribute = null)
+    public function resolveForDisplay($resource, ?string $attribute = null) : void
     {
         foreach ($this->fields as $field) {
             if ($field instanceof Field) {
